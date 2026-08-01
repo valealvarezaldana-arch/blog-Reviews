@@ -1,102 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Vlog Reviews - Valeria Álvarez Aldana & Isabella Perdomo Ospina</title>
-  <!-- Tailwind CSS -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <!-- FontAwesome Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
-  <!-- Google Fonts: Plus Jakarta Sans -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            pinterest: {
-              red: '#E60023',
-              darkRed: '#ad081b',
-              gray: '#e9e9e9',
-              lightBg: '#fafafa',
-              dark: '#111111'
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Reseñas de vlogs - Valeria Álvarez Aldana & Isabella Perdomo Ospina</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        pinterest: {
+                            red: '#E60023',
+                            darkRed: '#ad081b',
+                            gray: '#e9e9e9',
+                            lightBg: '#fafafa',
+                            dark: '#111111'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    }
+                }
             }
-          },
-          fontFamily: {
-            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
-          }
         }
-      }
-    }
-  </script>
-  <style>
-    /* Estilos de barra de desplazamiento y tarjetas estilo Pinterest */
-    ::-webkit-scrollbar {
-      width: 8px;
-    }
-    ::-webkit-scrollbar-track {
-      background: #f1f1f1;
-    }
-    ::-webkit-scrollbar-thumb {
-      background: #d1d5db;
-      border-radius: 9999px;
-    }
-    ::-webkit-scrollbar-thumb:hover {
-      background: #E60023;
-    }
-    .pin-card {
-      break-inside: avoid;
-      transition: transform 0.25s ease, box-shadow 0.25s ease;
-    }
-    .pin-card:hover {
-      transform: translateY(-4px);
-    }
-    .badge-glow {
-      box-shadow: 0 0 12px rgba(230, 0, 35, 0.35);
-    }
-  </style>
+    </script>
+    <style>
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #f1f1f1; }
+        ::-webkit-scrollbar-thumb { background: #d1d5db; border-radius: 9999px; }
+        ::-webkit-scrollbar-thumb:hover { background: #E60023; }
+        .pin-card { break-inside: avoid; transition: transform 0.25s ease, box-shadow 0.25s ease; }
+        .pin-card:hover { transform: translateY(-4px); }
+        .badge-glow { box-shadow: 0 0 12px rgba(230, 0, 35, 0.35); }
+    </style>
 </head>
 <body class="bg-[#f7f7f8] text-gray-800 font-sans min-h-screen flex flex-col antialiased">
 
-  <!-- TOP HEADER / NAVBAR (PINTEREST STYLE) -->
-  <header class="sticky top-0 z-50 bg-white border-b border-gray-200 px-4 lg:px-8 py-2.5 flex items-center justify-between gap-4 shadow-sm">
-    <!-- Logo e Identidad del Vlog -->
-    <div class="flex items-center gap-4 lg:gap-6">
-      <a href="#" class="flex items-center gap-2.5 group">
-        <div class="w-10 h-10 rounded-full bg-pinterest-red text-white flex items-center justify-center font-bold text-xl shadow-md group-hover:scale-105 transition-transform">
-          <i class="fa-brands fa-pinterest"></i>
+    <!-- NAVBAR -->
+    <header class="sticky top-0 z-50 bg-white border-b border-gray-200 px-4 lg:px-8 py-2.5 flex items-center justify-between">
+        <div class="flex items-center gap-4 lg:gap-6">
+            <a href="#" class="flex items-center gap-2.5 group">
+                <div class="w-10 h-10 rounded-full bg-pinterest-red text-white flex items-center justify-center font-bold text-xl">
+                    <i class="fa-brands fa-pinterest"></i>
+                </div>
+                <div class="hidden sm:block">
+                    <span class="font-extrabold text-base text-gray-900 tracking-tight block leading-tight">Valeria & Isabella</span>
+                    <span class="text-[10px] uppercase font-bold text-pinterest-red tracking-wider block">Blog Reviews</span>
+                </div>
+            </a>
         </div>
-        <div class="hidden sm:block">
-          <span class="font-extrabold text-base text-gray-900 tracking-tight block leading-tight">Valeria & Isabella</span>
-          <span class="text-[10px] uppercase font-bold text-pinterest-red tracking-wider block">Vlog Reviews</span>
+    </header>
+
+    <main class="flex-1 max-w-7xl w-full mx-auto p-4 sm:p-6">
+        <div class="bg-white rounded-2xl p-6 sm:p-8 shadow-sm border border-gray-200 text-center">
+            <h1 class="text-3xl font-extrabold text-gray-900 mb-2">Reseñas de Vlogs</h1>
+            <p class="text-gray-600 font-medium">Sitio publicado con éxito 🎉</p>
         </div>
-      </a>
-      
-      <nav class="hidden md:flex items-center gap-1 font-semibold text-sm">
-        <a href="#" class="px-4 py-2.5 rounded-full bg-gray-900 text-white transition">Home</a>
-        <a href="#web-reviews" class="px-4 py-2.5 rounded-full hover:bg-gray-100 text-gray-700 transition flex items-center gap-1.5">
-          <span>Website Reviews</span>
-          <span class="bg-pinterest-red text-white text-[10px] font-bold px-1.5 py-0.5 rounded-full">New</span>
-        </a>
-        <a href="#board" class="px-4 py-2.5 rounded-full hover:bg-gray-100 text-gray-700 transition">Pin Board</a>
-      </nav>
-    </div>
+    </main>
 
-    <!-- Barra de Búsqueda -->
-    <div class="flex-1 max-w-2xl mx-2">
-      <div class="relative flex items-center w-full">
-        <i class="fa-solid fa-magnifying-glass absolute left-4 text-gray-400"></i>
-        <input 
-          type="text" 
-          placeholder="Search Valeria & Isabella's reviews, outfit ideas, DIY..." 
-          class="w-full bg-gray-100 hover:bg-gray-200/80 focus:bg-white focus:ring-2 focus:ring-pinterest-red/40 focus:outline-none text-sm text-gray-800 rounded-full pl-11 pr-4 py-2.5 transition-all"
-        />
-      </div>
-    </div>
-
-    <!-- Sección de Notificaciones e Icono de Perfil de las Autoras (Valeria & Isabella) -->
-    <div class="flex items
+</body>
+</html>
